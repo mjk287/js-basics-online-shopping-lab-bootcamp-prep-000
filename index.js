@@ -10,8 +10,8 @@ function setCart(c) {
 }
 
 function addToCart(item) {
- item = {}
- return item
+ item = {[item] : Math.floor(100)}
+ return cart.push(item)
 }
 
 function viewCart() {
