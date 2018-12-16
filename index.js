@@ -11,7 +11,8 @@ function setCart(c) {
 
 function addToCart(item) {
  var cartItem = Object.assign({}, {'itemName' : [item]}, {'itemPrice': Math.floor(100)})
- return cart.push(cartItem)
+ cart.push(cartItem)
+ return `${item} has been added to your cart.`
 }
 
 function viewCart() {
