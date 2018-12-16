@@ -32,7 +32,7 @@ function viewCart() {
     }
     return cartMessage
   }else{
-    return 'Your shopping cart is empty'
+    return 'Your shopping cart is empty.'
   }
 }
 
