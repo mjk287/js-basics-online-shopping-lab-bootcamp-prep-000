@@ -10,7 +10,7 @@ function setCart(c) {
 }
 
 function addToCart(item) {
- var cartItem = Object.assign({}, {[item] : Math.floor(100)})
+ var cartItem = {'itemName' : Math.floor(100)}
  return cart.push(cartItem)
 }
 
