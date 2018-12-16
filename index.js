@@ -61,5 +61,6 @@ function removeFromCart(item) {
 }
 
 function placeOrder(cardNumber) {
-  e here
+  var totalCost = total()
+  
 }
