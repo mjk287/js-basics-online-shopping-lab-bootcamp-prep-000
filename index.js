@@ -19,12 +19,18 @@ function viewCart() {
   var cartMessage = "In your cart, you have"
   
   if (cart.length === 1){
-    cartMessage = cartMessage + `${cart[0].} at 
+    cartMessage = cartMessage + ` ${cart[0].itemName} at ${cart[0].itemPrice}`
+    return cartMessage
   }
   elif (cart.length > 0){
     for (var i = 0; i < cart.length; i++){
-      if (i === cart.length - 1)
+      if (i === cart.length - 1) {
+        cartMessage = cartMessage + ` and ${cart[i].itemName} at ${cart[i].itemPrice}.`
+      }else{
+        cartMessage = cartMessage + ` ${cart[i].itemName} at ${cart[i].itemPrice},`
+      }
     }
+    return cartMessage
   }else{
     return 'Your shopping cart is empty'
   }
